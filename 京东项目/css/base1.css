@@ -1,0 +1,384 @@
+
+/*公共的版心类*/
+.w {
+	width: 1190px;
+	margin: 0 auto;
+	
+}
+
+body {
+	background-color: #F0F3EF;
+}
+
+/*公共的左右浮动*/
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+ul { /*清除列表的样式*/
+	list-style: none;
+}
+
+/*清除元素的内外边距*/
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{
+	margin: 0;
+	padding: 0;
+}
+
+/*定义超链接文本的相关属性*/
+a {
+	text-decoration: none;
+}
+a:link {
+	color: #999;
+}
+a:hover {
+	color: #e33333 !important;
+}
+
+.f10 {	/*京东页面中通用的红色，并且提升权重*/
+	color: #f10215 !important;
+}
+
+/*引入图标字体*/
+@font-face {
+  font-family: 'icomoon'; /*icomoon表示引入图标字体时的名字*/
+  src:  url('../fonts/icomoon.eot?7n3pz0');
+  src:  url('../fonts/icomoon.eot?7n3pz0#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7n3pz0') format('truetype'),
+    url('../fonts/icomoon.woff?7n3pz0') format('woff'),
+    url('../fonts/icomoon.svg?7n3pz0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*头部*/
+header {
+	height: 80px;
+	background-color: #0F0F0F;
+}
+
+/*快速导航栏部分 start*/
+.shortcut {
+	height: 30px;
+	background-color: #E3E4E5;
+	border-bottom: 1px solid #DDDDDD;/*设置盒子底部边框*/
+	line-height: 30px;
+	font-size: 12px;
+}
+.shortcut .city { /*设置送货地址的具体位置*/
+	margin-left: 200px;
+}
+
+.shortcut li {	/*快速导航栏中的所有li标签都左浮动，目的是要显示在一行上*/
+	float: left;
+}
+.space {	/*小竖线*/
+	width: 1px;
+	height: 10px;
+	background-color: #ccc;
+	margin: 10px 12px 0;  /*上10px  左右12px 下0*/
+}
+
+.shortcut i { /*font字体图标设置*/
+	font-family: "icomoon";
+	font-style: normal;
+	color: #ccc;
+}
+
+.mobile {	/*子绝父相*/
+	position: relative;
+}
+
+.mobile img { /*设置客户端二维码的位置*/
+	position: absolute;
+	left: -10px;
+	top: 30px;
+	border: 1px solid #ccc;
+	padding: 2px;
+}
+/*快速导航栏部分 end*/
+
+
+/*中间大部分 start*/
+.middle {	/*设置整个中间部分的宽高*/
+	height: 140px;
+	position: relative;
+}
+
+.logo {	/*logo图标设置位置*/
+	position: absolute;
+	top: -30px;
+	left: 0;
+	border-bottom: 1px solid #ccc;
+}
+.logo a {	/*logo图标添加背景*/
+	display: block;
+	width: 190px;
+	height: 170px;
+	background: url(../images/jd_logo.png) no-repeat;
+}
+
+.search {	/*设置搜索模块的大小以及位置*/
+	width: 550px;
+	height: 35px;
+	position: absolute;
+	left: 320px;
+	top: 24px;
+}
+.search input {	/*设置输入框*/
+	width: 495px;
+	height: 35px;
+	background-color: #fff;
+	border: 0;
+	float: left;
+	padding-left: 5px;
+}
+
+.search button {	/*设置搜索按钮*/
+	width: 50px;
+	height: 35px;
+	background-color: #f10215;
+	border: 0;
+	float: left;
+}
+
+.search button i {	/*设置搜索按钮上的字体图标*/
+	font-family: "icomoon";
+	font-style: normal;
+	color: #fff;
+}
+
+.shopCar {	/*设置购物车模块的大小以及位置*/
+	width: 188px;
+	height: 33px;
+	border: 1px solid #ccc;
+	position: absolute;
+	right: 100px;
+	top: 24px;
+}
+.shopCar i {	/*设置购物车的字体图标*/
+	font-family: "icomoon";
+	font-style: normal;
+	color: #f10215;
+	margin-left: 48px;
+	line-height: 33px;
+}
+.shopCar a:link {	/*设置购物车的文本*/
+	color: #f10215;
+	font-size: 14px;
+}
+.shopCar span {	/*设置购物车的显示数量的元素*/
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #f10215;
+	color: #fff;
+	line-height: 15px;
+	text-align: center;
+}
+.hotwords {	/*热词*/
+	width: 500px;
+	height: 25px;
+	position: absolute;
+	left: 320px;
+	top: 60px;
+}
+.hotwords a {	/*热词中文本的字体大小*/
+	font-size: 12px;
+}
+
+.navitems {	/*设置小导航栏的位置及大小*/
+	width: 800px;
+	height: 35px;
+	position: absolute;
+	left: 210px;
+	bottom: 0;
+}
+
+.navitems li {	/*设置小导航栏中的所有li元素左浮动，目的是显示在一行上*/
+	float: left;
+	line-height: 35px;
+	margin: 0 15px;
+	
+}
+.navitems li a:link { /*设置链接文本的属性*/
+	color: #333;
+	font-size: 14px;
+}
+.navitems .move {	/*设置中间的小竖线*/
+	margin-top: 15px;
+}
+
+/*中间大部分 end*/
+.bottom{
+	height: 570px;
+	
+
+}
+.td{
+	height: 114px;
+	}
+.td li{
+	float: left;
+	display: inline-block;
+	width: 297px;
+	
+}
+.td h5{ 
+	display: inline-block;
+	color: #f10215;
+	font-size: 25px;
+	line-height: 114px
+}
+.td span{
+	display: inline-block;
+	line-height: 114px;
+	font-weight: bolder;
+}
+.td div{
+	margin-left: 50px;
+}
+.wb{
+	height: 200px;
+	
+}
+.div1{
+
+	height: max-content;
+	margin-top: 12px;
+	width: 194px;
+	display: inline-block;
+}
+.div2{
+	position: absolute;
+		height: max-content;
+	margin-top: 12px;
+	width: 194px;
+	display: inline-block;
+}
+.wb .div3{
+	position: absolute;
+	left: 468px;
+		height: max-content;
+	margin-top: 12px;
+	width: 194px;
+	display: inline-block;
+}
+.wb .div4{
+	position: absolute;
+	left:662px;
+		height: max-content;
+	margin-top: 12px;
+	width: 194px;
+	display: inline-block;
+}
+.wb .div5{
+	position: absolute;
+	left: 856px;
+		height: max-content;
+	margin-top: 12px;
+	width: 194px;
+	display: inline-block;
+}
+.wb .div6{
+	position: absolute;
+	left: 1050px;
+		height: max-content;
+	margin-top: 12px;
+	width: 200px;
+	display: inline-block;
+	text-align: center;
+}
+.wb h5{
+	
+	 height: 22px;
+	 width: 194px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.wb ul{
+	list-style-type: none;
+}
+.ul1{
+	height: 132px;
+	width: 194px;
+}
+.ul2{
+	width: 194px;
+	height: 110px;
+}
+.wb li{
+	width: 194px;
+	height: 22px;
+	margin-top: 5px;
+	font-size: 14px;
+}
+.wb a{
+	color: #666;
+}
+.wb a:hover{
+	color: #c81623;
+}
+.wb p{
+	font-size: 13px;
+}
+
+.div6 div{
+	margin-top: 10px;
+	line-height: 20px;
+}
+.div6 p:nth-of-type(2)
+{   
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+}
+.zh{
+	height: 265px;
+	
+}
+.zh-ul1{
+	color: #999;
+}
+.zh-ul1 li:nth-of-type(1){
+	margin-left: 70px;
+}
+
+.zh li{
+	float: left;
+	
+	margin-top: 15px;
+	margin-left: 8px;
+	font-size: 12px;
+}
+.zh-ul2,.zh-ul3,.zh-ul4,.zh-ul5,.zh-ul6{
+	color: #999;
+}
+.zh-ul1 a,.zh-ul2 a,.zh-ul3 a,.zh-ul4 a,.zh-ul5 a,.zh-ul6 a{
+	color: #999;
+}
+
+.zh-ul2 li:nth-of-type(1){
+	margin-left: 180px;
+}
+.zh-ul3 li:nth-of-type(1){
+	margin-left: 150px;
+}
+.zh-ul4 li:nth-of-type(1){
+	margin-left: 300px;
+}
+.zh-ul5 li:nth-of-type(1){
+	margin-left: 450px;
+}
+
+
+.zh-ul6 li:nth-of-type(1){
+	margin-left: 490px;
+}
+#zh a:hover{
+	color: #999;
+}
